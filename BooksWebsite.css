@@ -18,6 +18,24 @@ li {
 	float: left;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
@@ -40,52 +58,14 @@ li {
     color: ;
 }
 
-h1{
+.Title{
 	font-family: Paltino;
-	font-size: 50;
+	font-size: 58;
+	text-align: justify;
 }
 
 html{
 	background-color: #fffaf0;
-}
-
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-
-/* Create three equal columns that sits next to each other */
-.column {
-    -ms-flex: 33%; /* IE10 */
-    flex: 33%;
-    max-width: 33%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
 }
 
 /* Three image containers */
@@ -102,7 +82,7 @@ html{
   display: table;
 }*/
 
-.row2 {
+.row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
@@ -111,16 +91,20 @@ html{
 }
 
 /* Create four equal columns that sits next to each other */
-.column2 {
+.column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
 
-.column2 img {
+.column img {
     margin-top: 8px;
     vertical-align: middle;
+}
+
+.column a:hover{
+	background-color: grey;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -134,7 +118,7 @@ html{
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column2 {
+    .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;

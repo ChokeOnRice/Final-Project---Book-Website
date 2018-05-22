@@ -47,18 +47,3 @@ h1{
 html{
 	background-color: #fffaf0;
 }
-
-h2{
-	font-size: 40px; 
-	font-family: Paltino;
-	color: White;
-	background-color: Orange;
-	text-align: center;
-}
-
-h3{
-	background-color: #333;
-	padding: 0;
-	color: #333;
-    overflow: hidden;
-}
